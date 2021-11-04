@@ -1,0 +1,87 @@
+//
+//  ContentViewModel.swift
+//  CandlestickExample
+//
+//  Created by Gabriel Ferreira de Carvalho on 04/11/21.
+//
+
+import Foundation
+import FrameworkDeGraficos
+
+final class ContentViewModel: ObservableObject {
+    
+    let data: [CandleStickData] = [CandleStickData(highestTradedPrice: 200,
+                                                   lowestTradedPrice: 100,
+                                                   openTradedPrice: 170,
+                                                   closeTradedPrice: 150),
+                                   CandleStickData(highestTradedPrice: 100,
+                                                   lowestTradedPrice: 0,
+                                                   openTradedPrice: 70,
+                                                   closeTradedPrice: 50),
+                                   CandleStickData(highestTradedPrice: 150,
+                                                   lowestTradedPrice: 70,
+                                                   openTradedPrice: 90,
+                                                   closeTradedPrice: 150),
+                                   CandleStickData(highestTradedPrice: 200,
+                                                   lowestTradedPrice: 100,
+                                                   openTradedPrice: 170,
+                                                   closeTradedPrice: 150),
+                                   CandleStickData(highestTradedPrice: 100,
+                                                   lowestTradedPrice: 0,
+                                                   openTradedPrice: 70,
+                                                   closeTradedPrice: 50),
+                                   CandleStickData(highestTradedPrice: 150,
+                                                   lowestTradedPrice: 70,
+                                                   openTradedPrice: 90,
+                                                   closeTradedPrice: 150),
+                                   CandleStickData(highestTradedPrice: 200,
+                                                   lowestTradedPrice: 100,
+                                                   openTradedPrice: 170,
+                                                   closeTradedPrice: 150),
+                                   CandleStickData(highestTradedPrice: 100,
+                                                   lowestTradedPrice: 0,
+                                                   openTradedPrice: 70,
+                                                   closeTradedPrice: 50),
+                                   CandleStickData(highestTradedPrice: 150,
+                                                   lowestTradedPrice: 70,
+                                                   openTradedPrice: 90,
+                                                   closeTradedPrice: 150),
+                                   CandleStickData(highestTradedPrice: 200,
+                                                   lowestTradedPrice: 100,
+                                                   openTradedPrice: 170,
+                                                   closeTradedPrice: 150),
+                                   CandleStickData(highestTradedPrice: 100,
+                                                   lowestTradedPrice: 0,
+                                                   openTradedPrice: 70,
+                                                   closeTradedPrice: 50),
+                                   CandleStickData(highestTradedPrice: 150,
+                                                   lowestTradedPrice: 70,
+                                                   openTradedPrice: 90,
+                                                   closeTradedPrice: 150),
+                                   CandleStickData(highestTradedPrice: 200,
+                                                   lowestTradedPrice: 100,
+                                                   openTradedPrice: 170,
+                                                   closeTradedPrice: 150),
+                                   CandleStickData(highestTradedPrice: 100,
+                                                   lowestTradedPrice: 0,
+                                                   openTradedPrice: 70,
+                                                   closeTradedPrice: 50),
+                                   CandleStickData(highestTradedPrice: 150,
+                                                   lowestTradedPrice: 70,
+                                                   openTradedPrice: 90,
+                                                   closeTradedPrice: 150),
+                                   CandleStickData(highestTradedPrice: 200,
+                                                   lowestTradedPrice: 100,
+                                                   openTradedPrice: 170,
+                                                   closeTradedPrice: 150),
+                                   CandleStickData(highestTradedPrice: 100,
+                                                   lowestTradedPrice: 0,
+                                                   openTradedPrice: 70,
+                                                   closeTradedPrice: 50),
+                                   CandleStickData(highestTradedPrice: 150,
+                                                   lowestTradedPrice: 70,
+                                                   openTradedPrice: 90,
+                                                   closeTradedPrice: 150)]
+    
+    let xLabels: [String] = ["jan", "fev", "mar"]
+}

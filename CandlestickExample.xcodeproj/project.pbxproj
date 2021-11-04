@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B5DF0F827343F2E006CF7EA /* FrameworkDeGraficos in Frameworks */ = {isa = PBXBuildFile; productRef = 5B5DF0F727343F2E006CF7EA /* FrameworkDeGraficos */; };
+		5B5DF1152734566E006CF7EA /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5DF1142734566E006CF7EA /* ContentViewModel.swift */; };
 		E6E5D67E272B3E45008E5FC6 /* CandlestickExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5D67D272B3E45008E5FC6 /* CandlestickExampleApp.swift */; };
 		E6E5D680272B3E45008E5FC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5D67F272B3E45008E5FC6 /* ContentView.swift */; };
 		E6E5D682272B3E48008E5FC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6E5D681272B3E48008E5FC6 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B5DF0F527343F24006CF7EA /* FrameworkDeGraficos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FrameworkDeGraficos; path = "../../../Academy/Challenges/Nano Challenge 4/NC4/FrameworkDeGraficos"; sourceTree = "<group>"; };
+		5B5DF1142734566E006CF7EA /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		E6E5D67A272B3E45008E5FC6 /* CandlestickExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CandlestickExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E5D67D272B3E45008E5FC6 /* CandlestickExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandlestickExampleApp.swift; sourceTree = "<group>"; };
 		E6E5D67F272B3E45008E5FC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +30,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B5DF0F827343F2E006CF7EA /* FrameworkDeGraficos in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B5DF0F427343F24006CF7EA /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				5B5DF0F527343F24006CF7EA /* FrameworkDeGraficos */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		5B5DF0F627343F2E006CF7EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E6E5D671272B3E45008E5FC6 = {
 			isa = PBXGroup;
 			children = (
+				5B5DF0F427343F24006CF7EA /* Packages */,
 				E6E5D67C272B3E45008E5FC6 /* CandlestickExample */,
 				E6E5D67B272B3E45008E5FC6 /* Products */,
+				5B5DF0F627343F2E006CF7EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +77,7 @@
 				E6E5D67F272B3E45008E5FC6 /* ContentView.swift */,
 				E6E5D681272B3E48008E5FC6 /* Assets.xcassets */,
 				E6E5D683272B3E48008E5FC6 /* Preview Content */,
+				5B5DF1142734566E006CF7EA /* ContentViewModel.swift */,
 			);
 			path = CandlestickExample;
 			sourceTree = "<group>";
@@ -83,6 +106,9 @@
 			dependencies = (
 			);
 			name = CandlestickExample;
+			packageProductDependencies = (
+				5B5DF0F727343F2E006CF7EA /* FrameworkDeGraficos */,
+			);
 			productName = CandlestickExample;
 			productReference = E6E5D67A272B3E45008E5FC6 /* CandlestickExample.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +165,7 @@
 			files = (
 				E6E5D680272B3E45008E5FC6 /* ContentView.swift in Sources */,
 				E6E5D67E272B3E45008E5FC6 /* CandlestickExampleApp.swift in Sources */,
+				5B5DF1152734566E006CF7EA /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +296,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CandlestickExample/Preview Content\"";
-				DEVELOPMENT_TEAM = 9X7UY2FV75;
+				DEVELOPMENT_TEAM = WK7599VNDW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -298,7 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CandlestickExample/Preview Content\"";
-				DEVELOPMENT_TEAM = 9X7UY2FV75;
+				DEVELOPMENT_TEAM = WK7599VNDW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -341,6 +368,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B5DF0F727343F2E006CF7EA /* FrameworkDeGraficos */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FrameworkDeGraficos;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E6E5D672272B3E45008E5FC6 /* Project object */;
 }

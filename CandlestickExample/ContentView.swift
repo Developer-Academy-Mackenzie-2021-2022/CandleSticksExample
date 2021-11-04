@@ -4,30 +4,61 @@
 //
 //  Created by Débora Kassardjian on 28/10/21.
 //
-
+import FrameworkDeGraficos
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject
+    var viewModel = ContentViewModel()
+    
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack(alignment: .leading) {
-                    Rectangle()
-                        .frame(height: 300)
-                    Text("Sobre o gráfico de vela")
-                        .font(.headline)
-                        .padding()
-                    Text("For we have a choice in this country. And just as we keep our keep our promise to the next generation here at home, so must we keep America's promise abroad. But my personal story is not so unique. When a new flu infects one human being, all are at risk.If you're working forty hours a week, you shouldn't be living in poverty. And it's a lesson we need to remember today - as members of another Joshua generation. It's a racial stalemate we've been stuck in for years. On November 4th, we must stand up and say: Eight is enough. Of course, recognizing our common humanity is only the beginning of our task. We know that is God's vision.")
-                        .padding()
+                   ScrollView {
+                       VStack(alignment: .leading) {
+                           Text("Cores padrão")
+                               .font(.title) //bold
+                               .padding()
+                           CandleSticksChart(data: viewModel.data, xLabels: viewModel.xLabels)
+                               .frame(height: 300)
+                           Text("Cores padrão que respeitam o funcionamento do dark e light mode")
+                               .padding()
+                               .font(.headline)
+                           Text("Cores modificadas")
+                               .font(.title) //bold
+                               .padding()
+                           CandleSticksChart(data: viewModel.data, xLabels: viewModel.xLabels, barColor: .gray, labelColor: .gray, increaseCandleColor: .primary, decreaseCandleColor: .gray)
+                               .frame(height: 300)
+                           Text("É possivel modificar as cores dos elementos de acordo com a sua necessiade modificando os parametros de cor")
+                               .padding()
+                               .font(.headline)
 
-                }
-            } .navigationTitle("Gráfico de Vela")
-        }
+
+                       }
+                   } .navigationTitle("Gráfico de velas")
+               }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            let viewModel = ContentViewModel()
+            ContentView()
+                .preferredColorScheme(.light)
+            ContentView()
+                .preferredColorScheme(.dark)
+            CandleSticksChart(data: viewModel.data, xLabels: viewModel.xLabels, barColor: .gray, labelColor: .gray, increaseCandleColor: .primary, decreaseCandleColor: .gray)
+                .previewLayout(.fixed(width: 400, height: 400))
+            CandleSticksChart(data: viewModel.data, xLabels: viewModel.xLabels, barColor: .gray, labelColor: .gray, increaseCandleColor: .primary, decreaseCandleColor: .gray)
+                .preferredColorScheme(.dark)
+                .previewLayout(.fixed(width: 400, height: 400))
+            
+        }
     }
 }
+
+/**
+ 
+ 
+     CandleSticksChart(data: , xLabels: )
+ */
