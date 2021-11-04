@@ -49,7 +49,7 @@ struct ContentView_Previews: PreviewProvider {
                 .preferredColorScheme(.dark)
             CandleSticksChart(data: viewModel.data, xLabels: viewModel.xLabels, barColor: .gray, labelColor: .gray, increaseCandleColor: .primary, decreaseCandleColor: .gray)
                 .previewLayout(.fixed(width: 400, height: 400))
-            CandleSticksChart(data: viewModel.data, xLabels: viewModel.xLabels, barColor: .gray, labelColor: .gray, increaseCandleColor: .primary, decreaseCandleColor: .gray)
+            CandleSticksChart(data: viewModel.data, xLabels: viewModel.xLabels)
                 .preferredColorScheme(.dark)
                 .previewLayout(.fixed(width: 400, height: 400))
             
