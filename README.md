@@ -28,8 +28,7 @@ let viewModel = ContentViewModel()
 CandleSticksChart(data: viewModel.data, xLabels: viewModel.xLabels)
 ```
 
-<img width="216" alt="Screen Shot 2021-11-05 at 16 16 40" src="https://user-images.githubusercontent.com/49920539/140566393-90754067-2f82-4f9a-b55a-aa0d88d32df0.png"><img width="224" alt="Screen Shot 2021-11-05 at 16 16 50" src="https://user-images.githubusercontent.com/49920539/140566421-14ab6a3c-3b25-4d98-836f-da4db23ec95a.png">
-
+<img width="300" alt="Screen Shot 2021-11-05 at 16 21 37" src="https://user-images.githubusercontent.com/49920539/140566917-5e77d30c-1967-4213-8be7-91fea45a5fb3.png"><img width="300" alt="Screen Shot 2021-11-05 at 16 21 15" src="https://user-images.githubusercontent.com/49920539/140566929-cc756bf4-3b1a-41df-a1be-227343a24811.png">
 
 Com cores modificadas:
 ```swift
