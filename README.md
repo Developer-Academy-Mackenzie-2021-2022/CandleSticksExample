@@ -1,21 +1,25 @@
 # CandleSticksExample
 
-1. [Requerimentos](#requirementos)
-2. [Uso](#uso)
+1. [O que é](#1-o-que-é-o-gráfico-de-velas)
+2. [Requerimentos](#2-requirementos)
+3. [Uso](#3-uso)
     - [Forma de criar gráficos](#forma-de-criar-gráficos)
     - [Forma de receber os dados](#forma-de-receber-os-dados)
-3. [Formato de entrada de dados](#formato-de-entrada-de-dados)
-4. [Componentes](#componentes)
+4. [Formato de entrada de dados](#4-formato-de-entrada-de-dados)
+5. [Componentes](#5-componentes)
       - [Parâmetros de entrada para criação do gráfico](#parâmetros-de-entrada-para-criação-do-gráfico)
       - [Parâmetros de entrada para criação das velas](#parâmetros-de-entrada-para-criação-das-velas)
-5. [Autores](#autores)
+6. [Autores](#6-autores)
 
-## Requirementos
+# 1. O que é o gráfico de velas
+Para demonstrar flutuações dos valores de mercado de ações, o gráfico de velas é um grande auxílio para identificar os períodos de alta, lateralização e queda dos valores. Esse é um gráfico que tem uma complexidade maior de leitura já que ele depende de muitos fatores, sendo composto por três elementos principais: período, que mostra o que houve com o preço de uma ação em determinado tempo, o formato, que informa o preço da ação durante o período que foi escolhido, e a cor, que demonstra se a vela está alta (verde) ou baixa (vermelho). Sendo assim possível realizar análises de mercado e definir quais são os melhores investimentos, de acordo com os cenários apresentados.
+
+# 2. Requirementos
 - iOS 13 ou mais
 - macOS 15 ou mais
 - XCode 11 ou mais
 
-## Uso
+# 3. Uso
 ### Forma de criar gráficos
 Com cores padrão:
 ```swift
@@ -38,7 +42,7 @@ CandleSticksChart(data: viewModel.data, xLabels: viewModel.xLabels, barColor: .g
 let viewModel = ContentViewModel()
 ````
 
-## Formato de entrada de dados
+# 4. Formato de entrada de dados
 Exemplo de entrada
 ```swift
 final class ContentViewModel: ObservableObject {
@@ -63,7 +67,7 @@ final class ContentViewModel: ObservableObject {
     let xLabels: [String] = ["jan", "fev", "mar"]
 }
 ````
-## Componentes
+# 5. Componentes
 ### Parâmetros de entrada para criação do gráfico
 Nome | Tipo | Descrição | Obrigatório
 ------------ | ------------- | ------------- | -------------
@@ -82,7 +86,7 @@ lowestTradedPrice | Double | Menor valor negociado
 openTradedPrice | Double | Valor de abertura
 closeTradedPrice | Double | Valor de fechamento
 
-## Autores
+# 6. Autores
 Gabriel Ferreira de Carvalho 
 
 Debora Kassardian
