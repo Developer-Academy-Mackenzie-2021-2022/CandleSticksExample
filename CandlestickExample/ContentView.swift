@@ -4,7 +4,7 @@
 //
 //  Created by Débora Kassardjian on 28/10/21.
 //
-import FrameworkDeGraficos
+import Everest
 import SwiftUI
 
 struct ContentView: View {

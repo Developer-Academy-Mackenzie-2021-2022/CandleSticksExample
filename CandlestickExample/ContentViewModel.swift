@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import FrameworkDeGraficos
+import Everest
 
 final class ContentViewModel: ObservableObject {
     
